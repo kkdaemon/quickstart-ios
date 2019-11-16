@@ -50,7 +50,27 @@ class ViewController: UIViewController {
     // log message show in the console output.
     // [START log_and_crash_swift]
     CLSLogv("%@", getVaList(["Cause Crash button clicked"]))
-    Crashlytics.sharedInstance().crash()
+    // Crashlytics.sharedInstance().crash()
+
+    let mutexTryLock = CLSStackFrame();
+    mutexTryLock.fileName = "project1/systemLib/mutex.lua";
+    mutexTryLock.lineNumber = 42;
+    mutexTryLock.library = "Mutex";
+    mutexTryLock.symbol = "TryLock";
+
+    let waitSystem = CLSStackFrame();
+    waitSystem.fileName = "project1/main.lua";
+    waitSystem.lineNumber = 7;
+    waitSystem.library = "";
+    waitSystem.symbol = "main";
+
+    Crashlytics.sharedInstance().recordCustomExceptionName(
+        "CustomExceptionName",
+        reason: "Custom Exception Reason",
+        frameArray: [
+            mutexTryLock,
+            waitSystem,
+        ])
     // [END log_and_crash_swift]
   }
 }
