@@ -4,6 +4,51 @@ Firebase Crashlytics Quickstart
 The Firebase Crashlytics iOS quickstart demonstrates how to report crashes and log
 events leading up to those crashes.
 
+Custom Stack Trace Demo
+-----------------------
+
+```swift
+let mutexTryLock = CLSStackFrame();
+mutexTryLock.fileName = "project1/systemLib/mutex.lua";
+mutexTryLock.lineNumber = 42;
+mutexTryLock.library = "Mutex";
+mutexTryLock.symbol = "TryLock";
+
+let waitSystem = CLSStackFrame();
+waitSystem.fileName = "project1/main.lua";
+waitSystem.lineNumber = 7;
+waitSystem.library = "";
+waitSystem.symbol = "main";
+
+Crashlytics.sharedInstance().recordCustomExceptionName(
+    "CustomExceptionName",
+    reason: "Custom Exception Reason",
+    frameArray: [
+        mutexTryLock,
+        waitSystem,
+    ])
+```
+
+Results in (in Firebase Console):
+
+**Non-fatal Exception: CustomExceptionName**
+**Custom Exception Reason**
+
+```
+Non-fatal Exception: CustomExceptionName
+0  ???                            0x0 TryLock + 42 (mutex.lua:42)
+1  ???                            0x0 main + 7 (main.lua:7)
+```
+
+![Firebase Console Screenshot](https://github.com/dotdoom/quickstart-ios/raw/master/crashlytics/FirebaseConsoleScreenshot.png)
+
+Note that the following information is lost or skewed:
+
+* library name "Mutex" is missing
+* directory (folder) name "project1" and "systemLib" are missing from file name
+* line number is duplicated in "mutex.lua:42" and "+ 42"
+
+
 Introduction
 ------------
 
