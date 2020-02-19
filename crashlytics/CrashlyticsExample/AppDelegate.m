@@ -17,6 +17,7 @@
 #import "AppDelegate.h"
 
 @import Firebase;
+@import Crashlytics;
 
 @implementation AppDelegate
 
@@ -24,8 +25,21 @@
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
   // Initialize Firebase service.
+  [CrashlyticsKit setDebugMode:YES];
   [FIRApp configure];
   return YES;
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    CLSNSLog(@"applicationDidBecomeActive");
+    [CrashlyticsKit setBoolValue:NO forKey:@"app-suspended"];
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{
+    CLSNSLog(@"applicationDidEnterBackground");
+    [CrashlyticsKit setBoolValue:YES forKey:@"app-suspended"];
 }
 
 @end
