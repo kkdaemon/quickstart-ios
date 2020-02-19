@@ -31,28 +31,18 @@
   [CrashlyticsKit setIntValue:3 forKey:@"current_level"];
   [CrashlyticsKit setObjectValue:@"logged_in" forKey:@"last_UI_action"];
   [CrashlyticsKit setUserIdentifier:@"123456789"];
+}
 
+- (IBAction)initiateCrash:(id)sender {
+  CLSNSLog(@"Initiate non-fatal error");
   NSDictionary *userInfo = @{
-                             NSLocalizedDescriptionKey: NSLocalizedString(@"The request failed.", nil),
-                             NSLocalizedFailureReasonErrorKey: NSLocalizedString(@"The response returned a 404.", nil),
-                             NSLocalizedRecoverySuggestionErrorKey: NSLocalizedString(@"Does this page exist?", nil),
                              @"ProductID": @"123456",
                              @"UserID": @"Jane Smith"
                              };
   NSError *error = [NSError errorWithDomain:NSURLErrorDomain
-                                       code:-1001
+                                       code:-1042
                                    userInfo:userInfo];
   [CrashlyticsKit recordError:error];
-}
-
-- (IBAction)initiateCrash:(id)sender {
-  // CLSLog is used here to indicate that the log message
-  // will not be shown in the console output. Use CLSNSLog to have the
-  // log message show in the console output.
-  // [START log_and_crash]
-  CLSLog(@"Cause Crash button clicked");
-  [Crashlytics.sharedInstance crash];
-    // [END log_and_crash]
 }
 
 @end
