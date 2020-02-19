@@ -23,8 +23,8 @@
 		5FDE055D1B0DAA090037B82F /* AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDE055C1B0DAA090037B82F /* AppTests.m */; };
 		7F9C61E723802DC4001E900E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F9C61E623802DC4001E900E /* GoogleService-Info.plist */; };
 		7FFB75C7238030DF008FECE4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7FFB75C6238030DF008FECE4 /* GoogleService-Info.plist */; };
-		E2C9A9FF270EA83B407776CF /* Pods_CrashlyticsExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F020C024E048B5A504D5AB /* Pods_CrashlyticsExample.framework */; };
-		E5072F78B85D560387CE31AE /* Pods_CrashlyticsExampleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7706563327ED863010619D9E /* Pods_CrashlyticsExampleSwift.framework */; };
+		BC9D42C3AA7FF94E9F55C3C6 /* libPods-CrashlyticsExampleSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F35D96BA4857C7125CD9D5A9 /* libPods-CrashlyticsExampleSwift.a */; };
+		F974CED61D9375CDB55D9F4A /* libPods-CrashlyticsExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57BD97B150EA902AECAA6457 /* libPods-CrashlyticsExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +59,7 @@
 		1073482820333B71004A66D1 /* CrashReportingExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashReportingExampleUITests.m; sourceTree = "<group>"; };
 		1073482A20333B71004A66D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41634680CB17DC7CB5379DDB /* Pods-CrashlyticsExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrashlyticsExample.release.xcconfig"; path = "Target Support Files/Pods-CrashlyticsExample/Pods-CrashlyticsExample.release.xcconfig"; sourceTree = "<group>"; };
+		57BD97B150EA902AECAA6457 /* libPods-CrashlyticsExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CrashlyticsExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F5A534C1ADE670C00F81DF0 /* CrashlyticsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrashlyticsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F5A53501ADE670C00F81DF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F5A53511ADE670C00F81DF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,13 +75,12 @@
 		5F9961071AE0CF4F0034F503 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		5FDE05581B0DAA090037B82F /* CrashlyticsExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrashlyticsExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FDE055C1B0DAA090037B82F /* AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppTests.m; sourceTree = "<group>"; };
-		69F020C024E048B5A504D5AB /* Pods_CrashlyticsExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrashlyticsExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A4E8D81FFA641E29426E235 /* Pods-CrashlyticsExampleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrashlyticsExampleSwift.debug.xcconfig"; path = "Target Support Files/Pods-CrashlyticsExampleSwift/Pods-CrashlyticsExampleSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		7706563327ED863010619D9E /* Pods_CrashlyticsExampleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrashlyticsExampleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F9C61E623802DC4001E900E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7FFB75C6238030DF008FECE4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B5B6567078C678DB02654844 /* Pods-CrashlyticsExampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrashlyticsExampleSwift.release.xcconfig"; path = "Target Support Files/Pods-CrashlyticsExampleSwift/Pods-CrashlyticsExampleSwift.release.xcconfig"; sourceTree = "<group>"; };
 		C90BE68B6016AE095AD3DA23 /* Pods-CrashlyticsExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrashlyticsExample.debug.xcconfig"; path = "Target Support Files/Pods-CrashlyticsExample/Pods-CrashlyticsExample.debug.xcconfig"; sourceTree = "<group>"; };
+		F35D96BA4857C7125CD9D5A9 /* libPods-CrashlyticsExampleSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CrashlyticsExampleSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2C9A9FF270EA83B407776CF /* Pods_CrashlyticsExample.framework in Frameworks */,
+				F974CED61D9375CDB55D9F4A /* libPods-CrashlyticsExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5072F78B85D560387CE31AE /* Pods_CrashlyticsExampleSwift.framework in Frameworks */,
+				BC9D42C3AA7FF94E9F55C3C6 /* libPods-CrashlyticsExampleSwift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,8 +235,8 @@
 		DBF32C5103452C8DF40FA847 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				69F020C024E048B5A504D5AB /* Pods_CrashlyticsExample.framework */,
-				7706563327ED863010619D9E /* Pods_CrashlyticsExampleSwift.framework */,
+				57BD97B150EA902AECAA6457 /* libPods-CrashlyticsExample.a */,
+				F35D96BA4857C7125CD9D5A9 /* libPods-CrashlyticsExampleSwift.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -289,7 +289,6 @@
 				5F5A53491ADE670C00F81DF0 /* Frameworks */,
 				5F5A534A1ADE670C00F81DF0 /* Resources */,
 				10E114DA20E3DDE20013E4A4 /* ShellScript */,
-				A43CC8942D031F3AF33D74DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -309,7 +308,6 @@
 				5F5A53761ADE67D500F81DF0 /* Frameworks */,
 				5F5A53771ADE67D500F81DF0 /* Resources */,
 				10E114DB20E3DDF00013E4A4 /* ShellScript */,
-				5E19A3A656A3DC63D2F0BF44 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -471,46 +469,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\"";
-		};
-		5E19A3A656A3DC63D2F0BF44 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CrashlyticsExampleSwift/Pods-CrashlyticsExampleSwift-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CrashlyticsExampleSwift/Pods-CrashlyticsExampleSwift-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A43CC8942D031F3AF33D74DC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CrashlyticsExample/Pods-CrashlyticsExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CrashlyticsExample/Pods-CrashlyticsExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		BB73BFF93C9F50E0DA768049 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

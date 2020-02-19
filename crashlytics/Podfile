@@ -1,13 +1,23 @@
 # CrashlyticsExample
-use_frameworks!
-platform :ios, '8.0'
+#   use_frameworks!
+platform :ios, '10.0'
 
 pod 'Firebase/Analytics'
 pod 'Fabric'
 pod 'Crashlytics'
 
 target 'CrashlyticsExample'  do
+    use_modular_headers!
+
+    pod 'Firebase/Analytics'
+    pod 'Fabric'
+    pod 'Crashlytics'
 end
 
 target 'CrashlyticsExampleSwift' do
+    use_modular_headers!
+
+    pod 'Firebase/Analytics'
+    pod 'Fabric'
+    pod 'Crashlytics'
 end
